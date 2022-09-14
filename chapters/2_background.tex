@@ -1,0 +1,38 @@
+\chapter{background}
+\label{chap:2_background}
+
+\lipsum[2-4]
+
+\section{Section 1}
+\lipsum[5-6]
+
+\section{Section 2}
+    \lipsum[7]
+    
+    \subsection{Subsection A}
+    \lipsum[8]
+    
+    \subsection{Subsection B}
+    \lipsum[9]
+    
+        \subsubsection{Subsubsection B-1}
+        
+        %Refer to the table via the label
+        As seen in \autoref{tab:my_label}, the result ...
+        
+        % Adding tables
+        \begin{table}[h]    % h = place here
+            \centering
+            \caption{This is how you add a table in latex}  
+            \label{tab:my_label}    % unique label to reference in the text
+            \begin{tabular}{c|c}    % c|c means that the table is of two (c = centered) elements
+                                    % the " | " symbol draws a line between the elements
+                Number & Result \\ \toprule
+                0 & 0.0 \\
+                1 & 0.5 \\
+                2 & 0.75 \\
+            \end{tabular}
+        \end{table}
+        
+\section{Subsection 3}
+\lipsum[11]

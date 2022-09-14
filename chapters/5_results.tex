@@ -1,0 +1,32 @@
+\chapter{Results}
+\label{chap:5_results}
+
+\lipsum[2-4]
+
+\section{Mathematical expressions}
+
+If you need to add equations or mathematical expressions in general, you can do so in an equation environment. \autoref{eq:DFT} shows the \gls{dft} 
+
+%The command \gls{dft} calls the glossary package of this template and searches for the definition of the passed parameter, in this case "dft", this acronym must be added into the acronym.tex file inside the auxfiles folder.
+
+\begin{equation}
+    \label{eq:DFT}
+    X[w] = \sum_{n = 0}^{N-1}x[n]e^{-j\frac{2\pi}{N}wn}
+\end{equation}
+
+\section{Writing code inside the text}
+
+To correctly portray code in a thesis, it is necessary to add the code as a \textit{listing}. This environment accepts multiple common languages like Python, C, C++ and many more. 
+
+\begin{lstlisting}[language=C++, caption=C++ example]
+namespace abc{
+    class Point{
+    private:
+        float x, y;
+    public:
+        Point(): x(0.0f), y(0.0f){};
+        Point(const float& _x, const float& _y): x(_x), y(_y) {};
+    ...
+    };
+}
+\end{lstlisting}

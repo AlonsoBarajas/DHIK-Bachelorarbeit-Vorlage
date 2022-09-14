@@ -1,0 +1,46 @@
+\chapter{Setup}
+\label{chap:3_setup}
+
+\lipsum[2-4]
+
+\section{How to insert an image}
+
+To insert an image in \LaTeX{}, it is important to call the $\backslash begin\{figure\}$  environment.\autoref{fig:my_label} shows the result to inserting an image.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{example-image}
+    \caption{Inserting an image in \LaTeX}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Inserting subimages}
+
+This template has the \textit{subcaption} package which lets you create subfigures as shown below. \autoref{fig:subfigA}, \autoref{fig:subfigB} and \autoref{fig:subfigC} are contained inside \autoref{fig:subfigure}
+
+
+\begin{figure}[h]
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width = \textwidth]{example-image-a}
+        \caption{This is subfigure A}
+        \label{fig:subfigA}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width = \textwidth]{example-image-b}
+        \caption{This is subfigure B}
+        \label{fig:subfigB}
+    \end{subfigure}
+     ~ 
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width = \textwidth]{example-image-c}
+        \caption{This is subfigure C}
+        \label{fig:subfigC}
+    \end{subfigure}
+    
+    \caption{This is the whole figure}
+    \label{fig:subfigure}
+\end{figure}
